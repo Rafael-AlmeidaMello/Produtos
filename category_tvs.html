@@ -3,26 +3,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categoria TVs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page-category-tvs">
-    <h1>Categoria de Tvs</h1>
+    <header>
+        <h1>Categoria de Tvs</h1>
+            <div class="return">
+                <a href="produtos.html"><h4>Retornar</h4></a>
+            </div>
+    </header>
+<main>
+<table class="products-table" border="1">
+    <thead>
+        <tr>
+            <th>Imagem</th>
+            <th>Marca</th>
+            <th>Preço</th>
+            <th>Parcela</th>
+            <th>Detalhes</th>
+        </tr>   
+    </thead>
+    <tbody>
+        <tr>
+            <td class="images">
+                <picture>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_856866-MLU75134656041_032024-O.webp" alt="TV philips" class="responsive-product-img">
+                </picture>
+            </td>
+            <td>TV philips</td>
+            <td>R$ 1998,28 à vista</td>
+            <td>10x de R$ 199,90 sem juros</td>
+            <td>
+                <a href="https://www.amazon.com.br/PHILIPS-Smart-50PUG7300-Comando-Bluetooth/dp/B0FPBPX7WF/ref=asc_df_B0FPBPX7WF?mcid=f2adc547ae9d3ff69181b30bb20abf93&tag=googleshopp00-20&linkCode=df0&hvadid=709964502896&hvpos=&hvnetw=g&hvrand=8454865997969499940&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9102344&hvtargid=pla-2449667478946&psc=1&hvocijid=8454865997969499940-B0FPBPX7WF-&hvexpln=0&language=pt_BR">Detalhes</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="images">
+                <picture>
+                    <img src="https://www.lg.com/content/dam/channel/wcms/br/images/tv/43ur7800psa_awz_essp_br_c/gallery/D-01.jpg" alt="TV LG" class="responsive-product-img">
 
-    <ol id="primary-list">
-        <li>
-            <img src="https://http2.mlstatic.com/D_NQ_NP_856866-MLU75134656041_032024-O.webp">
-            <h3>TV philips</h3>
-            <h4>Valor a vista: R$ 1998,28</h4>
-            <h4>10x R$ 199,90 sem juros</h4>
-            <a href="https://www.amazon.com.br/PHILIPS-Smart-50PUG7300-Comando-Bluetooth/dp/B0FPBPX7WF/ref=asc_df_B0FPBPX7WF?mcid=f2adc547ae9d3ff69181b30bb20abf93&tag=googleshopp00-20&linkCode=df0&hvadid=709964502896&hvpos=&hvnetw=g&hvrand=8454865997969499940&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9102344&hvtargid=pla-2449667478946&psc=1&hvocijid=8454865997969499940-B0FPBPX7WF-&hvexpln=0&language=pt_BR">Detalhes</a>
-        </li>
-        <li>
-            <img src="https://www.lg.com/content/dam/channel/wcms/br/images/tv/43ur7800psa_awz_essp_br_c/gallery/D-01.jpg">
-            <h3>TV LG</h3>
-            <h4>Valor a vista: R$ 2599,34</h4>
-            <h4>12x de R$ 219,25 sem juros</h4>
-            <a href="https://www.amazon.com.br/LG-Processador-Upscaling-Integrado-Controle/dp/B0F5X39JQ1/ref=asc_df_B0F5X39JQ1?mcid=9d0d4cb40ed83a56ac87ce0411afb5d3&tag=googleshopp00-20&linkCode=df0&hvadid=709964502896&hvpos=&hvnetw=g&hvrand=16113957402064742717&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9102344&hvtargid=pla-2426086785815&psc=1&hvocijid=16113957402064742717-B0F5X39JQ1-&hvexpln=0&language=pt_BR">Detalhes</a>
-        </li>
-    </ol>
+                </picture>
+            </td>
+            <td>TV LG</td>
+            <td>R$ 2599,34 à vista</td>
+            <td>12x de R$ 219,25 sem juros</td>
+            <td>
+                <a href="https://www.amazon.com.br/LG-Processador-Upscaling-Integrado-Controle/dp/B0F5X39JQ1/ref=asc_df_B0F5X39JQ1?mcid=9d0d4cb40ed83a56ac87ce0411afb5d3&tag=googleshopp00-20&linkCode=df0&hvadid=709964502896&hvpos=&hvnetw=g&hvrand=16113957402064742717&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9102344&hvtargid=pla-2426086785815&psc=1&hvocijid=16113957402064742717-B0F5X39JQ1-&hvexpln=0&language=pt_BR">Detalhes</a>
+            </td>
+        </tr>
+    </tbody>
+        
+</table>
+
+<br>
+
+    <form action="post" class="questions">
+        <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" required>
+        <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+        <label for="produtos">Digite o produto desejado:</label>
+            <input list="listaprodutos" name="produtos">
+            <datalist id="listaprodutos">
+                <option value="Mouse">Mouse</option>
+                <option value="Teclado">Teclado</option>
+            </datalist>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+    <h2>Principais Perguntas</h2>
+    <details>
+        <summary class="questions">Como solicitar produtos?</summary>
+        <p class="questions">Caso não encontre o produto desejado, procure na aba de recomendação</p>
+    </details>
+</main>
+
+<footer>
+    <p>&copy; 2024 Todos os direitos reservados.</p>
+    <div class="footer-links">
+        <a href="produtos.html">Home</a>
+        <a href="mailto:contato@produtos.com">Contato</a>
+        <a href="#">Política de Privacidade</a>
+    </div>
+    <div class="footer-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</footer>
 </body>
 </html>
